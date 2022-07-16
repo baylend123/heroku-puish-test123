@@ -44,7 +44,7 @@ app.use(
 app.get('/', async(req, res) => {
   const user = await User.findByPk(1)
   // const user = await Sequelize.literal('select * from users where id=1; ')
-
+ console.log('some change')
   res.json(user)
 })
 
